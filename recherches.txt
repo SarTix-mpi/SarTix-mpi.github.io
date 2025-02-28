@@ -1,0 +1,11 @@
+Recherches TIPE :
+
+Analyse des du signal des musiques populaires, que l'humain retient plus facilement
+
+Lecture des sujets de concours MP/MPI/PSI en physique et en informatique. 
+Cryptographie, parcours d'arbres. 
+idée : Créer un algorithme d'optimisation de prompt pour les IA afin de rendre le 
+problème d'alignement négligeable
+--> Méthode de monte carlo afin de tester un panel de prompt similaire et d'en tirer
+les résultats les plus pertinents. 
+--> Plus court chemin (dijkstraat)
