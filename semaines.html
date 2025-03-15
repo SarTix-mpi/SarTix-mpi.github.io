@@ -8,49 +8,54 @@
 </head>
 <body>
   <h2><a href="index.html">Accueil</a></h2>
-  <h1>Semaine 1</h1>
-  <div class="content" id="semaine1">
-  <p>Recherches sur les signaux des musiques populaires.<br>
-    Lecture d'un cours d'un <a href = "https://hal.science/hal-01901959/document">cours</a>
-    de HAL open science sur l'analyse des musiques populaires enregistrées par Olivier Julien.
-  </p>
+
+  <h2 id="semaine1">Semaine 1</h2>
+  <div class="content">
+    Recherches sur les signaux des musiques populaires.<br>
+      Lecture d'un <a href = "https://hal.science/hal-01901959/document">cours</a>
+      de HAL open science sur l'analyse des musiques populaires enregistrées par Olivier Julien.
   </div>
-  <h1>Semaine 2</h1>
-  <div id="semaine2" class="content">
-Lecture des sujets de concours MP/MPI/PSI en physique et en informatique. <br>
-Cryptographie, parcours d'arbres. <br>
-idée : Créer un algorithme d'optimisation de prompt pour les IA afin de rendre le 
-problème d'alignement négligeable
-<ul>
-  <li>Méthode de monte carlo afin de tester un panel de prompts similaires et d'en tirer
-  les résultats les plus pertinents. Documentation sur <a href="https://arxiv.org/abs/2310.16427?utm_source=chatgpt.com">Prompt Agent</a>.
-  Un pdf détaillant le processus de Prompt Agent <a href="https://arxiv.org/pdf/2310.16427">ici</a>.
-  </li>
-</ul>
-</div>
-  <h1>Semaine 3</h1>
-  <div class="content" id="semaine3">
+
+  <h2 id="semaine2">Semaine 2</h2>
+  <div class="content">
+    Lecture des sujets de concours MP/MPI/PSI en physique et en informatique. <br>
+    Cryptographie, parcours d'arbres. <br>
+    Idée : Créer un algorithme d'optimisation de prompt pour les IA afin de rendre le 
+    problème d'alignement négligeable.
+    <ul>
+      <li>Méthode de monte carlo afin de tester un panel de prompts similaires et d'en tirer
+      les résultats les plus pertinents. Documentation sur <a href="https://arxiv.org/abs/2310.16427?utm_source=chatgpt.com">Prompt Agent</a>.
+      Un pdf détaillant le processus de Prompt Agent <a href="https://arxiv.org/pdf/2310.16427">ici</a>.
+      </li>
+    </ul>
+  </div>
+
+  <h2 id="semaine3">Semaine 3</h2>
+  <div class="content">
     Recherches sur le lien entre Maths, Physiques et musiques populaires. <br>
     Lecture d'un <a href="https://www.insmi.cnrs.fr/fr/cnrsinfo/maths-musique-1-les-maths-dans-la-musique-la-musique-des-maths-reflexions-autour-de-la?utm_source=chatgpt.com">article</a>
     du CNRS. 
     <br>Une <a href = "https://theses.hal.science/tel-00004074">thèse</a> sur les Méthodes algébriques dans la musique et la musicologie du XXème siècle.
   </div>
-  <h1>Semaine 4</h1>
-  <div class="content" id="semaine4">
+
+  <h2 id="semaine4">Semaine 4</h2>
+  <div class="content">
     Recherches sur le fonctionnement de Shazam. Analyse spectrale, Fingerprinting.<br>
     Proposer un modèle qui permettrait de détecter les musiques jouées au piano/chantées.<br>
     Principe : prendre une base de données de 15-20 musiques jouées avec un instrument, utiliser les fichier MIDI.<br>
     En fait, Shazam détecte plutôt bien quand la musique est très ressemblante à l'originale : nouvelle problématique -> proposer un modèle permettant de trouver la musique originale d'une reprise/remix.
   </div>
-  <h1>Semaine 5</h1>
-  <div class="content" id="semaine5">
-    Recherches supplémentaires sur la problématique émise la semaine précédente. <br>
-    Pour cela, constitution d'une base de données avec des musiques connues ainsi que différentes reprises poour chacune d'entre elles. <br>
-    Utilisation du module librosa de python, ainsi que numpy pour l'analyse des signaux. Utilisation de la série de fourier (décomposition de signaux).<br>
+
+  <h2 id="semaine5">Semaine 5</h2>
+  <div class="content">
+    Recherches supplémentaires sur la problématique émise la semaine précédente:<br></br>
+    <div class="problematique">Comment identifier une musique originale à partir d'une reprise ?</div><br>
+    Pour cela, constitution d'une base de données avec des musiques connues ainsi que différentes reprises pour chacune d'entre elles. <br>
+    Utilisation du module librosa de python, ainsi que numpy pour l'analyse des signaux. Utilisation de la série de Fourier (décomposition de signaux).<br>
     Limites : filtrage du bruit extérieur, reprise plutôt éloignée de l'originale avec des caractéristiques relativement lointaines. <br>
     Les fichiers MIDI contiennent beaucoup d'informations utiles comme les accords, le rythme, tempo, et des caractéristiques sur les notes jouées. 
     Modules python : pretty_midi, mido. <br>
-    Pour les fichiers MIDI, fourier peut être utilisé si c'est pertinent pour mes analyses. Dans ce cas il faut générer un son virtuel à partir du fichier MIDI.<br>
+    Pour les fichiers MIDI, Fourier peut être utilisé si c'est pertinent pour mes analyses. Dans ce cas il faut générer un son virtuel à partir du fichier MIDI.<br>
   </div>
 </body>
 </html>

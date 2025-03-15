@@ -6,7 +6,16 @@ h1 {
   color: black;
   text-align: center;
 }
-
+h2 {
+  text-align: center; /* Centre le texte horizontalement */
+  width: 100%;        /* Permet au centrage de s'étendre sur toute la largeur */
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #4CAF50;     /* Vert élégant */
+  font-size: 35px;    /* Taille agréable */
+  text-transform: uppercase; /* Titre en majuscules */
+  letter-spacing: 2px; /* Espacement pour une meilleure lisibilité */
+}
 .content {
   background-color: #ffffff; /* Fond blanc pour contraster */
   border: 2px solid #4CAF50; /* Bordure verte élégante */
@@ -21,6 +30,7 @@ h1 {
   
   /* Effet léger au survol */
   transition: transform 0.3s ease-in-out;
+  font-size: 22px;
 }
 
 .content:hover {
@@ -30,4 +40,53 @@ h1 {
 p {
   font-family: verdana;
   font-size: 20px;
+}
+
+.menu-container {
+  display: flex;
+  background-color: #4CAF50; /* Vert élégant */
+  border-radius: 12px; /* Coins arrondis */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre douce */
+  overflow: hidden; /* Assure les bords arrondis propres */
+}
+
+.menu-item {
+  padding: 15px 25px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff; /* Texte blanc */
+  font-weight: bold;
+  text-transform: uppercase; /* Majuscules pour plus d'élégance */
+  letter-spacing: 1px;
+  display: block; /* Rendre les liens cliquables sur toute la zone */
+}
+
+.menu-item:hover {
+  background-color: #45a049; /* Vert plus foncé au survol */
+  transform: scale(1.1); /* Effet de zoom léger */
+}
+
+.menu-item:active {
+  background-color: #3e8e41; /* Vert plus foncé en cas de clic */
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+      flex-direction: column; /* Menu vertical sur petits écrans */
+      width: 100%; /* Pleine largeur */
+  }
+
+  .menu-item {
+      padding: 12px 0;
+  }
+}
+
+.problematique {
+  color: #e53935;  /* Rouge vif pour attirer l'attention */
+  font-size: 27px;  /* Taille de police légèrement augmentée */
+  font-weight: bold; /* Texte en gras pour souligner l'importance */
 }
